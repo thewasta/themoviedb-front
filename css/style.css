@@ -1,0 +1,36 @@
+/*
+font-family: 'Bebas Neue', cursive;
+font-family: 'Noto Serif', serif;
+font-family: 'Noto Sans KR', sans-serif;
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+body {
+    overflow-y: hidden;
+    height: 100vh;
+    font-family: 'Bebas Neue', cursive;
+}
+
+#container {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 100px auto;
+}
+
+.search-bar {
+    background: #d7d7d7;
+}
+
+.movies {
+    background: #cecece;
+}
