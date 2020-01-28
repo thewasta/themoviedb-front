@@ -16,14 +16,15 @@ a {
 }
 
 body {
-    overflow: hidden;
+    /*overflow: hidden;*/
     height: 100vh;
+    width: 100vw;
     font-family: 'Bebas Neue', cursive;
 }
 
 #container {
+    width: 100%;
     height: 100%;
-    overflow: auto;
     display: grid;
     grid-template-rows: 100px auto;
 }
@@ -38,7 +39,6 @@ body {
 }
 
 .search-bar div {
-    position: fixed;
     display: flex;
 }
 
@@ -66,12 +66,44 @@ body {
     background: #c7c7c7;
 }
 
-.movies-grid {
-    padding: 8px;
+.content {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto 40px;
+}
+
+.movies-grid {
+    margin: 15px;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(2, 250px);
 }
 
 .movies-grid .movie {
-    margin: 0 4px;
+    position: relative;
+    width: 100%;
+    background: red;
+}
+
+.movie img {
+    opacity: 0;
+    width: 100%;
+    height: 50px;
+}
+
+
+.pages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+li {
+    color: #fff;
+    border-radius: 5px;
+    list-style: none;
+    display: inline-block;
+    background: #5a5a5a;
+    padding: 5px;
 }
